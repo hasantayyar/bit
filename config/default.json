@@ -1,0 +1,22 @@
+{
+	"server": {
+		"host": "localhost",
+		"port": 3000
+	},
+	"btc": {
+		"api": "https://blockchain.info/ticker",
+		"cachekey": "btcdata",
+		"fee": {
+			"lt100": {
+				"EUR": 0.5,
+				"USD": 0.5,
+				"GBP": 0.5
+			},
+			"gte100": {
+				"EUR": 0.2,
+				"USD": 0.5,
+				"GBP": 0.7
+			}
+		}
+	}
+}
