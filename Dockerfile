@@ -1,7 +1,7 @@
 FROM node:boron
 
-# Create app directory
-RUN 		mkdir -p /usr/src/app
+# Create app and db directory
+RUN 		mkdir -p /usr/src/app && mkdir -p /data/db
 WORKDIR 	/usr/src/app
 RUN			apt-get update && apt-get install -y mongodb
 # Install app dependencies
