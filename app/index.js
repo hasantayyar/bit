@@ -6,6 +6,9 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const winston = require('winston');
 const errorHandler = require('../lib/errorHandler');
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/bitwala');
+
 const app = express();
 
 app.use(errorHandler);

@@ -11,7 +11,7 @@ describe('Routing', () => {
       var data = {};
 
       request(url)
-        .get('/')
+        .get('/test-api')
         .send(data)
         .expect(200, done);
     });
